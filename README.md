@@ -1,5 +1,6 @@
 # General Summary
 I have included the Jupyter Notebook that I used to construct a binary classification artifical neural network using tensorflow. 
+My model concluded after 9 Epochs with early stopping and yielded **92.97% validation-binary-accuracy** on a test set of 25,000 rows x 17 columns.
 
 ## Data Cleaning
 First I cleaned the incoming data and then evaluated scatterplots, histograms and heatmaps to determine general relationships. 
