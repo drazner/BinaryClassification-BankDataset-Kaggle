@@ -15,12 +15,22 @@ Then I separated the input features into two separate lists: one for categorical
 I applied a **standard scaler** to the numerical data and **OneHotEncoding** for the categorical data.
 
 ## ANN Model
-I created an ANN model with an input layer that uses batch normalization, three hidden layers using the ReLU activation function and an output layer using the sigmoid function.
-I used adam for the optimizer, and binary-crossentropy for the loss function, and I added an early-stopping callback because without it the model was overfitting.
+I created an ANN model with: 
+1) an input layer that uses **batch normalization**,
+2) three hidden layers using the **ReLU activation function** and
+3) an output layer using the **sigmoid function**
+
+   
+I used **adam** for the **optimizer**, and **binary-crossentropy** for the **loss function**, and I added an **early-stopping callback** because without it the model was **overfitting**.
+
+
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/db1d03d5-d91d-4b2e-86e6-d7b8879d9ee0" />
+
 
 ## Results
-After training, I was able to create a model with 93.20% binary-accuracy with early stopping during the 9th Epoch. 
+After training, I was able to create a model with **93.20% binary-accuracy** on training data and **92.97% validation-binary-accuracy** with early stopping during the 9th Epoch. 
 
 <img width="630" height="470" alt="image" src="https://github.com/user-attachments/assets/c8d21894-d7c0-4356-afe9-398906322a75" />
 
-![Uploading image.png…]()
+<img width="630" height="470" alt="image" src="https://github.com/user-attachments/assets/0654b7b5-bfc6-4df6-b8b4-c4a356343e46" />
+
